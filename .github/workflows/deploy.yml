@@ -24,7 +24,8 @@ jobs:
       - name: Setup Terraform state bucket
         run: |
           cd infrastructure
-          sh setup_terraform_state_bucket.sh
+          sh setup_terraform_state_bucket_1.sh
+          sh setup_terraform_state_bucket_2.sh
       - name: Deploy with Terraform
         run: |
           cd infrastructure
